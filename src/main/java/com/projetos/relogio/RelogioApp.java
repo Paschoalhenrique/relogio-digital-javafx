@@ -46,7 +46,7 @@ public class RelogioApp extends Application {
 
         Scene cena = new Scene(vboxLayout, 400, 150);
 
-        palco.setTitle("Relógio Digital Théo");
+        palco.setTitle("Relógio Digital teste");
         palco.setScene(cena);
         palco.show();
     }
