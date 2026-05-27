@@ -22,10 +22,12 @@ public class RelogioApp extends Application {
     @Override
     public void start(Stage palco) {
         Label rotuloData = new Label();
-        rotuloData.setStyle("-fx-font-size: 20pt; -fx-text-fill: green;");
+        rotuloData.setStyle("-fx-font-size: 20pt; -fx-text-fill: #F8F8FF;");
+        //rotuloData.setStyle("-fx-font-size: 20pt; -fx-text-fill: green;");
 
         Label rotuloHora = new Label();
-        rotuloHora.setStyle("-fx-font-size: 36pt; -fx-text-fill: lightblue;");
+        rotuloHora.setStyle("-fx-font-size: 36pt; -fx-text-fill: #FF2800;");
+        //rotuloHora.setStyle("-fx-font-size: 36pt; -fx-text-fill: lightblue;");
 
         KeyFrame keyFrameAtualizar = new KeyFrame(Duration.ZERO, e -> {
             LocalDateTime agora = LocalDateTime.now();
@@ -46,7 +48,7 @@ public class RelogioApp extends Application {
 
         Scene cena = new Scene(vboxLayout, 400, 150);
 
-        palco.setTitle("Relógio Digital teste");
+        palco.setTitle("Relógio Digital.");
         palco.setScene(cena);
         palco.show();
     }
